@@ -13,6 +13,7 @@ public class Task1_ThrowRigidBody : MonoBehaviour
         _startPos = transform.position;
         yield return new WaitForSeconds(1f);
         SendCircle();
+        Debug.Log("Press Space to Relaunch Circle");
     }
 
     private void Update()
