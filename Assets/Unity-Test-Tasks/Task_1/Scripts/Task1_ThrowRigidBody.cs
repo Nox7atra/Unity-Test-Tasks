@@ -8,6 +8,11 @@ public class Task1_ThrowRigidBody : MonoBehaviour
 
     private bool _isFlying;
     private Vector2 _startPos;
+
+    public void SetForce(Vector2 force)
+    {
+        _force = force;
+    }
     private IEnumerator Start()
     {
         _startPos = transform.position;
