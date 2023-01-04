@@ -10,7 +10,6 @@ public class GraphRenderer : MaskableGraphic
     [SerializeField] private float _step = 0.1f;
     [SerializeField] private float _size = 1f;
     private List<Vector2> _points;
-    protected Vector3[] _CornersArray = new Vector3[4];
 
     private void GeneratePoints()
     {
@@ -32,7 +31,6 @@ public class GraphRenderer : MaskableGraphic
     protected override void OnPopulateMesh(VertexHelper vh)
     {
         vh.Clear();
-        rectTransform.GetLocalCorners(_CornersArray);
         if (_points is {Count: > 2})
         {
             for (int i = 0; i < _points.Count - 1; i++)
