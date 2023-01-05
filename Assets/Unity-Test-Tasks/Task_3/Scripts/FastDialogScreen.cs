@@ -15,10 +15,6 @@ public class FastDialogScreen : MonoBehaviour
     private float _updateThreshold;
     private void Start()
     {
-        for (int i = 0; i < 16; i++)
-        {
-            _texts.AddRange(_texts);
-        }
         _bubblesPool = new List<DialogBubble>();
         _distanceList = new List<float>();
         _currentStartIndex = 0;
